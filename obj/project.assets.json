@@ -2993,11 +2993,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\OrtalaMatik\\OrtalaMatik.csproj",
+      "projectUniqueName": "C:\\Dev\\Asp.NET Core\\OrtalaMatik\\OrtalaMatik.csproj",
       "projectName": "OrtalaMatik",
-      "projectPath": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\OrtalaMatik\\OrtalaMatik.csproj",
+      "projectPath": "C:\\Dev\\Asp.NET Core\\OrtalaMatik\\OrtalaMatik.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\OrtalaMatik\\obj\\",
+      "outputPath": "C:\\Dev\\Asp.NET Core\\OrtalaMatik\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eq0d9lYamjBSzAxkHrEWCt6cIEa3SlEpa3K41Nde1Fxr16rBP5HqsRA5vT7+mfo2yPF6+YA7izX4Z1lDztyT4A==",
+  "dgSpecHash": "q68rhsZl7FkC2FYw/M349j7PmWqwUFq+B0q34lcVXsHkG9gvofR1DPbC9Sf1VqNR7mA1N/tBjvpY8jIrwnk2gw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\OrtalaMatik\\OrtalaMatik.csproj",
+  "projectFilePath": "C:\\Dev\\Asp.NET Core\\OrtalaMatik\\OrtalaMatik.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

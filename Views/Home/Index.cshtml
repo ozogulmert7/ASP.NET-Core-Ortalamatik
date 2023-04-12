@@ -1,0 +1,66 @@
+﻿@using OrtalaMatik.Models.Entities;
+@model Lessons;
+
+@{
+    double dersOrtalamasi = 0;
+    double tumDerslerinOrtalamasi = 0;
+    int toplamKredi = 0;
+    if (Model.lessons.Count > 0)
+    {
+        foreach (var item in Model.lessons!)
+        {
+            dersOrtalamasi = item.Note * item.Credit;
+            tumDerslerinOrtalamasi = tumDerslerinOrtalamasi + dersOrtalamasi;
+            toplamKredi = toplamKredi + item.Credit;
+
+        }
+        tumDerslerinOrtalamasi = tumDerslerinOrtalamasi / toplamKredi;
+
+    }
+    else { }
+
+    // ders * kredi * ders2 * kredi 2 / toplamKredi
+    ViewData["Title"] = "HesaplaMatik";
+}
+
+<form method="post" action="/add-lesson" class="form">
+    <label>Ders Adı:</label>
+    <input asp-for="LessonName" class="form-control">
+    <span asp-validation-for="LessonName" class="text-danger"></span>
+    <br>
+    <div class="row">
+        <div class="col-6">
+            <label>Kredi:</label>
+            <input asp-for="Credit" class="form-control">
+            <span asp-validation-for="Credit" class="text-danger"></span>
+        </div>
+        <div class="col-6">
+            <label>Ders Notu:</label>
+            <input asp-for="Note" class="form-control">
+            <span asp-validation-for="Note" class="text-danger"></span>
+        </div>
+    </div>
+    <br>
+<h2 class="text-center underline-red">Ortalama: @tumDerslerinOrtalamasi</h2>
+
+   <div class="text-center">
+    <button type="submit" class="btn btn-warning addButton mt-2 mb-3">Ekle</button>
+</div>
+
+</form>
+
+@foreach (var item in Model.lessons!)
+{
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@item.LessonName</h5>
+                <hr>
+                <p class="card-text"><b>Kredi:</b> @item.Credit</p>
+                <p class="card-text"><b>Ders Notu:</b> @item.Note</p>
+                <a href="/delete-lesson/@item.Id" class="btn btn-danger deleteButton">Sil</a>
+            </div>
+        </div>
+    </div>
+    <br>
+}
